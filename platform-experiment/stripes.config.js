@@ -7,15 +7,8 @@ module.exports = {
     // logPrefix: 'stripes'
     // logTimestamp: false
     // showPerms: false
-    showHomeLink: true,
     // listInvisiblePerms: false
     // disableAuth: false
-    welcomeMessage: 'ui-experiment-vue-stripes.front.welcome',
-    platformName: 'experimental',
-    platformDescription: 'Experimental platform',
-    showDevInfo: true,
-    staleBundleWarning: { path: '/index.html', header: 'last-modified', interval: 5 },
-    disableStrictMode: true, // FIXME this is turned off because with it on Panes behave incredibly stupidly
     useSecureTokens: true,
   },
   modules: {
