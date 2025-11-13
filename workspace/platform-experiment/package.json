@@ -15,11 +15,11 @@
     "clean-install": "yarn clean && yarn install --ignore-scripts"
   },
   "dependencies": {
-    "@folio/developer": "~10.0.0",
-    "@folio/service-interaction": "~4.0.0",
-    "@folio/stripes-erm-components": "~10.0.1",
-    "@folio/stripes": "~10.0.10",
-    "@folio/tenant-settings": "~10.0.0",
+    "@folio/developer": "^10.0.0",
+    "@folio/service-interaction": "^4.0.0",
+    "@folio/stripes-erm-components": "^10.0.1",
+    "@folio/stripes": "^10.0.0",
+    "@folio/tenant-settings": "^10.0.0",
     "@folio/users": "~12.1.5",
     "@k-int/vue-experiment-stripes": "^1.0.0",
     "react": "^18.2.0",
