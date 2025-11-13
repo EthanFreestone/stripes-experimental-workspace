@@ -10,7 +10,7 @@
   "scripts": {
     "build": "export STRIPES_TRANSPILE_TOKENS=\"@k-int\"; export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
     "stripes": "stripes",
-    "start": "stripes serve stripes.config.js --hasAllPerms --start-proxy",
+    "start": "stripes serve stripes.config.js --hasAllPerms --start-proxy --proxy-port 3002",
     "clean": "rm -rf ../node_modules ../*/node_modules ../yarn.lock ../*/yarn.lock",
     "clean-install": "yarn clean && yarn install --ignore-scripts"
   },

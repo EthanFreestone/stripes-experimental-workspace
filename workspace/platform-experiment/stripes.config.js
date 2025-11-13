@@ -1,6 +1,6 @@
 module.exports = {
   //okapi: { 'url': 'https://folio-snapshot-okapi.dev.folio.org', 'tenant': 'diku' },
-  okapi: { 'url': 'https://folio-snapshot2-okapi.dev.folio.org', 'tenant': 'diku' },
+  okapi: { 'url': 'https://folio-snapshot-2-okapi.dev.folio.org', 'tenant': 'diku' },
   config: {
     // autoLogin: { username: 'diku_admin', password: 'admin' }
     // logCategories: 'core,redux,connect,connect-fetch,substitute,path,mpath,mquery,action,event,perm,interface,xhr'
