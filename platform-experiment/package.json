@@ -1,0 +1,41 @@
+{
+  "name": "@k-int/platform-experiment",
+  "version": "1.0.0",
+  "description": "Top-level experimental platform",
+  "license": "Apache-2.0",
+  "repository": "",
+  "publishConfig": {
+    "registry": "https://repository.folio.org/repository/npm-folio/"
+  },
+  "scripts": {
+    "build": "export STRIPES_TRANSPILE_TOKENS=\"@k-int\"; export NODE_OPTIONS=\"--max-old-space-size=4096 $NODE_OPTIONS\"; stripes build stripes.config.js",
+    "stripes": "stripes",
+    "start": "stripes serve stripes.config.js",
+    "local": "f=stripes.config.js; test -f $f.local && f=$f.local; echo Using config $f; stripes serve $f",
+    "clean": "rm -rf ../node_modules ../*/node_modules ../yarn.lock ../*/yarn.lock",
+    "clean-install": "yarn clean && yarn install --ignore-scripts"
+  },
+  "dependencies": {
+    "@folio/developer": "~10.0.0",
+    "@folio/service-interaction": "~4.0.0",
+    "@folio/stripes-erm-components": "~10.0.1",
+    "@folio/stripes": "~10.0.10",
+    "@folio/tenant-settings": "~10.0.0",
+    "@folio/users": "~12.1.5",
+    "@k-int/vue-experiment-stripes": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intl": "^7.1.5",
+    "react-query": "^3.13.0",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "rrule": "^2.8.1",
+    "rxjs": "^6.6.7"
+  },
+  "devDependencies": {
+    "@folio/stripes-cli": "^4.0.0",
+    "@interactors/html": "^1.0.0-rc1.2",
+    "@interactors/with-cypress": "^1.0.0-rc1.1"
+  }
+}

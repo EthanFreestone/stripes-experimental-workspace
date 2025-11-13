@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "workspaces": [
+      "*"
+  ],
+  "devDependencies": {
+  },
+  "dependencies": {
+  },
+  "resolutions": {
+    "react": "^17.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# This script is for developer workstations
+#
+# The intention is to have a script that can run with 
+#    curl -s "https://raw.githubusercontent.com/openlibraryenvironment/platform-ill/master/helper_scripts/setup" | bash
+# Which will configure a ux env
+# 
+
+# Make a directory for us to work inside - this is our workspace
+mkdir ill_ui
+cd ill_ui
+
+# Copy the workspace package.json
+wget https://raw.githubusercontent.com/openlibraryenvironment/platform-ill/master/helper_scripts/package.json
+
+git clone https://gitlab.com/knowledge-integration/libraries/networks/platform-ill.git
+git clone https://gitlab.com/knowledge-integration/libraries/networks/ill-ui.git
+git clone https://gitlab.com/knowledge-integration/libraries/networks/ill-directory.git
+git clone https://gitlab.com/knowledge-integration/libraries/networks/ill-request.git
+#git clone https://gitlab.com/knowledge-integration/libraries/networks/ill-update.git
+git clone https://gitlab.com/knowledge-integration/libraries/networks/ill-supply.git
+git clone https://gitlab.com/knowledge-integration/libraries/networks/stripes-ill.git
+git clone https://gitlab.com/knowledge-integration/libraries/networks/ill-plugin-siquery-folio
+git clone https://gitlab.com/knowledge-integration/libraries/networks/ill-plugin-siquery-vufind
+
+echo Completed clone and setup
+echo cd ill_ui/platform-ill and run "yarn install" to download deps, then "stripes serve ./stripes.config.js --hasAllPerms" to start the UI
