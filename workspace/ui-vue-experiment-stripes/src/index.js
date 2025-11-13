@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Switch } from 'react-router-dom';
 
 import { Route } from '@folio/stripes/core';
-import css from './index.css';
 import MainRoute from './MainRoute';
 
 const App = (props) => {
@@ -15,13 +14,9 @@ const App = (props) => {
   } = props;
 
   return (
-    <div className={css.container}>
-      <div className={css.body}>
-        <Switch>
-          <Route component={MainRoute} path={path} />
-        </Switch>
-      </div>
-    </div>
+    <Switch>
+      <Route component={MainRoute} path={path} />
+    </Switch>
   );
 };
 

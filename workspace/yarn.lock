@@ -2008,7 +2008,7 @@
     react-resize-detector "^11.0.0"
     zustand "^5.0.0"
 
-"@k-int/vue-experiment@../../vue-experiment/dist":
+"@k-int/vue-experiment@file:../vue-experiment/dist":
   version "0.0.0"
 
 "@kurkle/color@^0.3.0":
