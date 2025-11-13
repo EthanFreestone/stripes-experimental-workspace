@@ -1,5 +1,6 @@
 module.exports = {
-  okapi: { 'url': 'https://folio-snapshot-okapi.dev.folio.org', 'tenant': 'diku' },
+  //okapi: { 'url': 'https://folio-snapshot-okapi.dev.folio.org', 'tenant': 'diku' },
+  okapi: { 'url': 'https://folio-snapshot2-okapi.dev.folio.org', 'tenant': 'diku' },
   config: {
     // autoLogin: { username: 'diku_admin', password: 'admin' }
     // logCategories: 'core,redux,connect,connect-fetch,substitute,path,mpath,mquery,action,event,perm,interface,xhr'
@@ -12,10 +13,10 @@ module.exports = {
     welcomeMessage: 'ui-experiment-vue-stripes.front.welcome',
     platformName: 'experimental',
     platformDescription: 'Experimental platform',
-    hasAllPerms: false,
     showDevInfo: true,
     staleBundleWarning: { path: '/index.html', header: 'last-modified', interval: 5 },
-    disableStrictMode: true // FIXME this is turned off because with it on Panes behave incredibly stupidly
+    disableStrictMode: true, // FIXME this is turned off because with it on Panes behave incredibly stupidly
+    useSecureTokens: true,
   },
   modules: {
     '@folio/users': {},
@@ -26,12 +27,5 @@ module.exports = {
     '@k-int/vue-experiment-stripes': {},
   },
   branding: {
-    logo: {
-      src: './tenant-assets/ill-logo.png',
-      alt: 'Opentown Libraries',
-    },
-    favicon: {
-      src: './tenant-assets/ill-favicon.jpg',
-    },
-  },
+  }
 };
